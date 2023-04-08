@@ -34,16 +34,16 @@ searchButton.addEventListener('click', async e => {
   <a class="gallery__item" href="${galleryItem.largeImageURL}"><img class="gallery__image" src="${galleryItem.webformatURL}" alt="${galleryItem.tags}" loading="lazy" /></a>
   <div class="info">
     <p class="info-item">
-      <b>Likes: </b>${galleryItem.likes}
+      <b>Likes: </b><br/>${galleryItem.likes}
     </p>
     <p class="info-item">
-      <b>Views: </b>${galleryItem.views}
+      <b>Views: </b><br/>${galleryItem.views}
     </p>
     <p class="info-item">
-      <b>Comments: </b>${galleryItem.comments}
+      <b>Comments: </b><br/>${galleryItem.comments}
     </p>
     <p class="info-item">
-      <b>Downloads: </b>${galleryItem.downloads}
+      <b>Downloads: </b><br/>${galleryItem.downloads}
     </p>
   </div>
 </div>`

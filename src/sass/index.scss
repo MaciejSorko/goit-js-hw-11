@@ -12,6 +12,7 @@
   gap: 12px;
   justify-content: center;
   align-items: center;
+  margin: auto;
 }
 
 .gallery__image:hover {
@@ -20,7 +21,7 @@
 
 .gallery__image {
   height: 200px;
-  width: 300px;
+  width: 100%;
   object-fit: cover;
   transition: transform var(--animation-duration) var(--timing-function);
 }
@@ -36,6 +37,7 @@
 }
 .photo-card {
   border-style: outset;
+  width: 20%;
 }
 
 .search-form {
@@ -63,4 +65,15 @@ button[type='submit'] {
   border-top-right-radius: 5px;
   border-bottom-left-radius: 5px;
   cursor: pointer;
+}
+.info {
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.info-item {
+  max-width: 25%;
+  font-size: 12px;
 }
