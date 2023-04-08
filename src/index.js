@@ -7,7 +7,7 @@ const axios = require('axios').default;
 import SimpleLightbox from 'simplelightbox';
 let galleryItems = [];
 import 'simplelightbox/dist/simple-lightbox.min.css';
-import './sass/_example.scss';
+
 
 const sendGetRequest = async e => {
   try {
@@ -37,16 +37,16 @@ searchButton.addEventListener('click', async e => {
   <a class="gallery__item" href="${galleryItem.largeImageURL}"><img class="gallery__image" src="${galleryItem.webformatURL}" alt="${galleryItem.tags}" loading="lazy" /></a>
   <div class="info">
     <p class="info-item">
-      <b>Likes: ${galleryItem.likes}</b>
+      <b>Likes: </b>${galleryItem.likes}
     </p>
     <p class="info-item">
-      <b>Views: ${galleryItem.views}</b>
+      <b>Views: </b>${galleryItem.views}
     </p>
     <p class="info-item">
-      <b>Comments: ${galleryItem.comments}</b>
+      <b>Comments: </b>${galleryItem.comments}
     </p>
     <p class="info-item">
-      <b>Downloads: ${galleryItem.downloads}</b>
+      <b>Downloads: </b>${galleryItem.downloads}
     </p>
   </div>
 </div>`
