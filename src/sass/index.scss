@@ -11,9 +11,8 @@
   flex-wrap: wrap;
   gap: 12px;
   justify-content: center;
+  align-items: center;
 }
-
-
 
 .gallery__image:hover {
   transform: scale(1.03);
@@ -37,9 +36,7 @@
 }
 .photo-card {
   border-style: outset;
-  
 }
-
 
 .search-form {
   display: flex;
