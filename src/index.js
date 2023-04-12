@@ -21,6 +21,9 @@ let galleryItems = [];
 let lastPage = 0;
 let totalHits = 0;
 let page = 1;
+let lightbox = new SimpleLightbox('.gallery a', {
+  captions: false,
+});
 
 //QUERY OPTIONS FOR API
 let searchOptions = {
@@ -74,16 +77,8 @@ const renderImages = galleryItems => {
 </div>`
     )
     .join('');
- gallery.insertAdjacentHTML('beforeend', markup);
-
-  let lightbox = new SimpleLightbox('.gallery a', {
-    captions: true,
-    captionDelay: 250,
-    captionSelector: 'img',
-    captionType: 'attr',
-    captionsData: 'alt',
-    captionPosition: 'bottom',
-  });
+  gallery.insertAdjacentHTML('beforeend', markup);
+  lightbox.refresh();
 };
 
 //EVENT LISTENERS
